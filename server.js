@@ -6,7 +6,7 @@ dotenv.config();
 //sets up express app
 const App = Express();
 
-App.get((res, req, next) => {
+App.get("/", (res, req, next) => {
   res.send("SUCCESS");
 });
 
