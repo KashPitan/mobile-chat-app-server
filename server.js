@@ -6,11 +6,11 @@ dotenv.config();
 //sets up express app
 const App = Express();
 
-App.get("/", (res, req, next) => {
+App.get("/", (req, res, next) => {
   res.send("SUCCESS");
 });
 
 //listen for requests on set up variable OR port 4000
 App.listen(process.env.port || 8081, () => {
-  console.log("listening on port 4000");
+  console.log("listening on port 8081");
 });
