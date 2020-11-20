@@ -11,6 +11,6 @@ App.get("/", (res, req, next) => {
 });
 
 //listen for requests on set up variable OR port 4000
-App.listen(process.env.port || 4000, () => {
+App.listen(process.env.port || 8081, () => {
   console.log("listening on port 4000");
 });
