@@ -26,6 +26,7 @@ const IO = Socket(Server);
 
 IO.on("connection", function (socket) {
   console.log("socket connection made", socket.id);
+  IO.sockets.emit("messages", messages);
 
   socket.on("chat", function (data) {
     messages.push(data);
